@@ -1,23 +1,14 @@
+import { getImage } from "../utils/video.util";
+
 export const Card = ({ video }) => {
-  const { id, title, url } = video;
+  const { vid, title, createdby, description } = video;
   return (
-    <div
-      style={{
-        height: "17rem",
-        width: "17rem",
-        cursor: "pointer",
-        margin: "1rem",
-      }}
-    >
-      <div style={{ height: "4rem" }}>
-        <img style={{ width: "9.9rem" }} src={url} />
+    <div className="blog-card-div m-1rem">
+      <div className="blog-image-div">
+        <img className="blog-image" src={getImage(vid)} />
       </div>
-      <div styleName={{ margin: "1rem", width: "2rem" }}>
+      <div className="blog-description-div">
         <h4>{title}</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dicta
-          doloremque.
-        </p>
       </div>
     </div>
   );

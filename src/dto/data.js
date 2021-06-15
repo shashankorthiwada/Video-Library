@@ -4,7 +4,7 @@ export const videosList = [
   {
     id: uuidv4(),
     title: "Video1",
-    url: "https://www.youtube.com/watch?v=kXxrWPbn8RM",
+    url: "https://youtu.be/r4JsjxuILd0",
   },
   {
     id: uuidv4(),
