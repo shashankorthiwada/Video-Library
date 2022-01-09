@@ -4,12 +4,8 @@ import { VideoListing } from "./VideoListing";
 
 export const Home = () => {
   return (
-    <div>
-      <Navigation />
-      <section className="container">
-        <Menu />
-        <VideoListing />
-      </section>
-    </div>
+    <>
+      <VideoListing />
+    </>
   );
 };
